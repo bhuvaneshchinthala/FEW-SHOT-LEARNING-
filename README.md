@@ -64,7 +64,25 @@ Few-shot learning on 6 novel categories:
 pip install ultralytics seaborn scikit-learn torch torchvision kagglehub
 ```
 
-## 🚀 Usage
+## � Dataset Download
+
+The datasets are too large to store on GitHub. Use the following code to download them:
+
+```python
+import kagglehub
+
+# Download BDD100K dataset
+bdd_path = kagglehub.dataset_download("solesensei/solesensei_bdd100k")
+print("BDD100K dataset path:", bdd_path)
+
+# Download Pascal VOC 2012 dataset
+voc_path = kagglehub.dataset_download("gopalbhattrai/pascal-voc-2012-dataset")
+print("Pascal VOC dataset path:", voc_path)
+```
+
+**Note**: You need to have a Kaggle account and API credentials configured. See [Kaggle API documentation](https://www.kaggle.com/docs/api) for setup instructions.
+
+## �🚀 Usage
 
 Run the Jupyter notebook `few-shot-learning (1).ipynb` to:
 
